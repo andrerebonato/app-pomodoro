@@ -1,0 +1,12 @@
+{
+  "name": "pomodoro-clock",
+  "displayName": "pomodoro-clock",
+  "expo": {
+    "name": "pomodoro-clock",
+    "slug": "pomodoro-clock",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
