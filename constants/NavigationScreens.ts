@@ -6,6 +6,10 @@ interface INavigationScreens {
     pomodoro: {
         name: string,
         displayName: string
+    },
+    navigator: {
+        pomodoro: string,
+        dashboard: string
     }
 }
 
@@ -17,6 +21,10 @@ const NavigationScreens: INavigationScreens = {
     pomodoro: {
         name: "PomodoroClock",
         displayName: "Pomodoro"
+    },
+    navigator: {
+        pomodoro: "PomodoroStack",
+        dashboard: "DashboardStack"
     }
 }
 
