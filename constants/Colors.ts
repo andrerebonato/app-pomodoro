@@ -13,7 +13,7 @@ const Colors: IColors = {
     primary: {
         color: "#FFF",
         background: "#FAFAFA",
-        inactive: "#BDBDBD",
+        inactive: "#666666",
         black: "#414141",
         danger: "#B00020",
         active: "#3D5AFE"
