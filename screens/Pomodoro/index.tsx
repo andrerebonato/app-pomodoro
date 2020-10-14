@@ -74,12 +74,14 @@ export default function Pomodoro({ navigation, route }: BaseScreen){
                 time: clock.breakTime * 1000
             });
         }
-        else if(clock.time === 0 && clock.mode === "break")
+        else if(clock.time === 0 && clock.mode === "break") {
+            handleWorkTimeFinishedFeedback();
             setClock({
                 ...clock,
                 mode: "session",
                 time: clock.workTime * 1000
             });
+        }
     }, [clock.time, clock.breakTime, clock.workTime, clock.mode])
 
     return (
