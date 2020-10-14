@@ -7,6 +7,11 @@ interface INavigationScreens {
         name: string,
         displayName: string
     },
+    createPomodoro: {
+        name: string
+        displayName: string
+        displayBar: string
+    }
     navigator: {
         pomodoro: string,
         dashboard: string
@@ -25,6 +30,11 @@ const NavigationScreens: INavigationScreens = {
     navigator: {
         pomodoro: "PomodoroStack",
         dashboard: "DashboardStack"
+    },
+    createPomodoro: {
+        name: "CreatePomodoro",
+        displayName: "VilaApps Pomodoro",
+        displayBar: "Pomodoro"
     }
 }
 

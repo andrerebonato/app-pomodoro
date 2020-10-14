@@ -8,10 +8,8 @@ import Fonts from '../constants/Fonts';
 import { RFValue } from '../helpers/fontSize';
 import NavigationScreens from '../constants/NavigationScreens';
 import { 
-    DashboardScreen, PomodoroScreen
+    DashboardScreen, CreatePomodoroScreen
 } from '../screens/index';
-import Dashboard from '../screens/Dashboard';
-
 
 interface ITabBarIcon {
     name: string,
@@ -30,17 +28,17 @@ function PomodoroNavigator(){
     return (
         <PomodoroStack.Navigator>
             <PomodoroStack.Screen 
-                name={NavigationScreens.pomodoro.name}
-                component={PomodoroScreen}
+                name={NavigationScreens.createPomodoro.name}
+                component={CreatePomodoroScreen}
                 options={{
-                    headerTitle: NavigationScreens.pomodoro.displayName,
+                    headerTitle: NavigationScreens.createPomodoro.displayName,
                     headerStyle: {
-                        backgroundColor: Colors.primary.background
+                        backgroundColor: Colors.primary.white
                     },
                     headerTitleStyle: {
                         fontSize: RFValue(20),
                         color: Colors.primary.black,
-                        fontFamily: Fonts.primary.bold
+                        fontFamily: Fonts.primary.regular
                     }
                 }}
             />
@@ -57,12 +55,12 @@ function DashboardNavigator(){
                 options={{
                     headerTitle: NavigationScreens.dashboard.displayName,
                     headerStyle: {
-                        backgroundColor: Colors.primary.background
+                        backgroundColor: Colors.primary.white
                     },
                     headerTitleStyle: {
                         fontSize: RFValue(20),
                         color: Colors.primary.black,
-                        fontFamily: Fonts.primary.bold
+                        fontFamily: Fonts.primary.regular
                     }
                 }}
             />
@@ -76,7 +74,7 @@ const BottomTabNavigator = () => (
         activeColor={Colors.primary.active}
         inactiveColor={Colors.primary.inactive}
         barStyle={{
-            backgroundColor: Colors.primary.background
+            backgroundColor: Colors.primary.white
         }}
     >
         <BottomTab.Screen 

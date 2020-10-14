@@ -3,8 +3,8 @@ import { View, Text } from 'react-native';
 
 export default function Dashboard(){
     return (
-        <View>
-            <Text>Simple Dashboard</Text>
+        <View style={{ backgroundColor: "white", flex: 1 }}>
+            <Text></Text>
         </View>
     )
 }

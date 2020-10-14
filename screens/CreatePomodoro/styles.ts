@@ -18,11 +18,10 @@ const styles = StyleSheet.create<IStyles>({
         justifyContent: 'center',
     },
     title: {
-        marginTop: 50,
+        marginTop: 10,
         textAlign: "center",
-        fontWeight: "bold",
         fontSize: RFValue(20),
-        fontFamily: Fonts.primary.bold,
+        fontFamily: Fonts.primary.regular,
         color: Colors.primary.black
     },
     inputContainer: {
@@ -32,6 +31,7 @@ const styles = StyleSheet.create<IStyles>({
         marginBottom: RFValue(10)
     },
     text: {
+        marginTop: 15,
         fontSize: RFValue(14),
         fontFamily: Fonts.primary.regular,
         textAlign: "center"

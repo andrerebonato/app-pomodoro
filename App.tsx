@@ -3,6 +3,7 @@ import {
   View, StyleSheet
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import * as Font from "expo-font";
 import { AppLoading } from "expo";
 
@@ -45,11 +46,11 @@ export default function App() {
   }
 
   return (
-    <NavigationContainer>
-      <View style={styles.container}>
+    <SafeAreaProvider style={styles.container}>
+      <NavigationContainer>
         <RootNavigator />
-      </View>
-    </NavigationContainer>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
 
